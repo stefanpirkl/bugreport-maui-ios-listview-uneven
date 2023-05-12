@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:c="clr-namespace:iOSContentViewBug"
+             x:Class="iOSContentViewBug.MainPage">
+
+	<ListView ItemsSource="{Binding AccordionValues}" HasUnevenRows="True">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<c:AccordionView AccordionContent="blablabla">
+					</c:AccordionView>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+
+</ContentPage>
